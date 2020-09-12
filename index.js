@@ -3,13 +3,20 @@ const port = 8000;
 const app = express();
 const db = require("./config/mongoose");
 
+//use body parser
+
+app.use(express.urlencoded());
+
 //include routes here
 app.use("/", require("./routes"));
 
+//listen to the ports
 app.listen(port, (err) => {
+  //error
   if (err) {
     console.log("error in connecting on port= ", port);
     return;
   }
+
   console.log("Connected to the port = ", port);
 });

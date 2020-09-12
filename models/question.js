@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { model } = require("../config/mongoose");
 const QuestionSchema = mongoose.Schema({
   question: {
     type: String,
@@ -10,3 +11,5 @@ const QuestionSchema = mongoose.Schema({
   },
   tags: [{ type: String }],
 });
+
+module.exports = mongoose.model("Questions", QuestionSchema);
