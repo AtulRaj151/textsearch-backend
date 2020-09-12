@@ -18,17 +18,18 @@ module.exports.searchQuestionByTagsOrQuery = async (req, res) => {
         //   no result found
         return res.status(404).json({
           message: "not found",
+          question: [],
         });
       }
 
       //   return the query
       return res.status(200).json({
-        question: [quest2.map((q) => q.question)],
+        question: quest2,
       });
     }
     //return the result
     return res.status(200).json({
-      question: [quest.map((q) => q.question)],
+      question: quest,
     });
   } catch (error) {
     return res.status(502).json({
