@@ -1,3 +1,4 @@
+const question = require("../../../models/question");
 const Questions = require("../../../models/question");
 module.exports.insertQues = async (req, res) => {
   //   console.log("inserted questions", req.body);

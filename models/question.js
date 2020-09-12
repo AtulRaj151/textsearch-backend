@@ -11,5 +11,5 @@ const QuestionSchema = mongoose.Schema({
   },
   tags: [{ type: String }],
 });
-
+QuestionSchema.index({ question: "text" });
 module.exports = mongoose.model("Questions", QuestionSchema);
