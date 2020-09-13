@@ -36,7 +36,7 @@ should return the question in the searched result.
  - nodejs
  
  # Installation
-    1. clone this repo: **git clone **
+    1. clone this repo: git clone https://github.com/AtulRaj151/textsearch-backend.git
     2. npm install
     3. npm start
          
