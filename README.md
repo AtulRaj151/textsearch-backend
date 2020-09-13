@@ -35,12 +35,12 @@ should return the question in the searched result.
  - mongodb for backend
  - nodejs
  
- # Installation
+ ## Installation
     - clone this repo: git clone https://github.com/AtulRaj151/textsearch-backend.git
-    -  npm install
+    - npm install
     - npm start
     - Visit https://github.com/AtulRaj151/textsearch-frontend.git for frontend UI or Use POSTMAN
     
-         
+ ## FRONTEND (React) for UI https://github.com/AtulRaj151/textsearch-frontend.git       
         
        
